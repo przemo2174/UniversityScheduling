@@ -5,11 +5,11 @@ using UniversityScheduling.Core.Enums;
 
 namespace UniversityScheduling.Core
 {
-    public class Room
+    public class Subject
     {
         public int Id { get; set; }
-        public int Capacity { get; set; }
+        public int Duration { get; set; }
+        public int LecturerId { get; set; }
         public SubjectType Type { get; set; }
-        public List<Slot> Slots { get; set; } //Busy slots
     }
 }
