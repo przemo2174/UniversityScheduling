@@ -28,7 +28,6 @@ namespace UniversityScheduling.Core.Helpers
                     _slots[i].Add(new Slot
                     {
                         Id = slotsCounter,
-                        Day = (Day)i,
                         Number = slotsCounter
                     });
                     slotsCounter++;

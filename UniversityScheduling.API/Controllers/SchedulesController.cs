@@ -11,9 +11,10 @@ namespace UniversityScheduling.API.Controllers
     [Route("api/schedules")]
     public class SchedulesController : Controller
     {
-        public IActionResult Get()
+        [HttpPost("course/{courseId}")]
+        public IActionResult PostCourseId(int courseId)
         {
-            return Ok("Schedules");
+            return Ok();
         }
     }
 }
