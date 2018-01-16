@@ -27,7 +27,12 @@ namespace UniversityScheduling.GeneticAlgorithm
             _slotsCount = slotsCount;
         }
 
-        public List<Slot> GetRandomSlots()
+        public List<Slot> GetInitializedSlots()
+        {
+            return InitializeSlots();
+        }
+
+        public List<Slot> GetRandomFilledSlots()
         {
             _slots = InitializeSlots();
             FillSlotsWithSubjects();

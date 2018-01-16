@@ -148,5 +148,10 @@ namespace UniversityScheduling.GeneticAlgorithm.FakeRepositories
         {
             return _subjects.Single(x => x.Id == id);
         }
+
+        public IEnumerable<Subject> GetAll()
+        {
+            return _subjects;
+        }
     }
 }

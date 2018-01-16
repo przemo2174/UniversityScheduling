@@ -25,7 +25,7 @@ namespace UniversityScheduling.Core.Tests
         public void FillWithSubjectsSlotsTest()
         {
             RandomSlotsGenerator generator = new RandomSlotsGenerator(new RoomsRandomizer(new RoomsFakeRepository()), new SubjectsFakeRepository(), new InstructorsFakeRepository());
-            var slots = generator.GetRandomSlots();
+            var slots = generator.GetRandomFilledSlots();
             var slotsWithSubjects = slots.Where(x => x.SubjectId != -1);
         }
 

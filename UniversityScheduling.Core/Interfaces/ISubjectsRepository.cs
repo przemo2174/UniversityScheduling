@@ -8,5 +8,6 @@ namespace UniversityScheduling.Core.Interfaces
     {
         int Count { get; }
         Subject GetById(int id);
+        IEnumerable<Subject> GetAll();
     }
 }
